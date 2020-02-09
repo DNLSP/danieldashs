@@ -1,0 +1,2547 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 13,
+  "iteration": 1581182718845,
+  "links": [],
+  "panels": [
+    {
+      "content": "<br>\n<h1 style=\"text-align: center;\"><img src=\"https://images.esp-online.com/thumbnails/aws_solution_list_thumbnail/2614/9455/9402/ZABBIX_LOGO.jpg\" alt=\"\" width=\"191\" height=\"50\" /></h1>\n<h1 style=\"text-align: center;\"><span style=\"color: #ffffff;\"><strong>$host</strong></span></h1>",
+      "datasource": null,
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 35,
+      "mode": "html",
+      "options": {},
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": ""
+          },
+          "host": {
+            "filter": ""
+          },
+          "item": {
+            "filter": ""
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 4
+      },
+      "id": 8,
+      "title": "SISTEMA",
+      "type": "row"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 4,
+        "w": 5,
+        "x": 0,
+        "y": 5
+      },
+      "id": 12,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "decimals": 2,
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-blue",
+                  "value": null
+                }
+              ]
+            },
+            "unit": "dtdurations"
+          },
+          "overrides": [],
+          "values": false
+        },
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto"
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "System uptime"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "UPTIME",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 4,
+        "w": 2,
+        "x": 5,
+        "y": 5
+      },
+      "id": 14,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "mappings": [
+              {
+                "from": "",
+                "id": 1,
+                "operator": "",
+                "text": "UP",
+                "to": "",
+                "type": 1,
+                "value": "1"
+              },
+              {
+                "from": "",
+                "id": 2,
+                "operator": "",
+                "text": "DOWN",
+                "to": "",
+                "type": 1,
+                "value": "0"
+              }
+            ],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-red",
+                  "value": null
+                },
+                {
+                  "color": "dark-red",
+                  "value": 0
+                },
+                {
+                  "color": "rgb(50, 173, 35)",
+                  "value": 1
+                }
+              ]
+            }
+          },
+          "overrides": [],
+          "values": false
+        },
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto"
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Agent ping"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "AGENTE",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 7,
+        "y": 5
+      },
+      "id": 16,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-blue",
+                  "value": null
+                }
+              ]
+            },
+            "unit": "USERS"
+          },
+          "overrides": [],
+          "values": false
+        },
+        "graphMode": "none",
+        "justifyMode": "center",
+        "orientation": "auto"
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Number of logged in users"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": " LOGADOS",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 10,
+        "y": 5
+      },
+      "id": 22,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-blue",
+                  "value": null
+                }
+              ]
+            },
+            "unit": "percent"
+          },
+          "overrides": [],
+          "values": false
+        },
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto"
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix history write cache, % free"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "HISTÓRICO: CACHE LIVRE",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 13,
+        "y": 5
+      },
+      "id": 31,
+      "maxDataPoints": "100",
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-red",
+                  "value": null
+                },
+                {
+                  "color": "dark-orange",
+                  "value": 50
+                },
+                {
+                  "color": "dark-blue",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "none"
+          },
+          "overrides": [],
+          "values": false
+        },
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto"
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix value cache hits"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "CACHE DOS VALORES",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 16,
+        "y": 5
+      },
+      "id": 18,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-blue",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": [],
+          "values": false
+        },
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto"
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Number of running processes"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "PROCESSOS EM EXECUÇÃO ",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 4,
+        "w": 4,
+        "x": 20,
+        "y": 5
+      },
+      "id": 20,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-blue",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": [],
+          "values": false
+        },
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto"
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Values processed by Zabbix server per second"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "NOVAS CONSULTAS POR SEGUNDO",
+      "type": "stat"
+    },
+    {
+      "collapsed": false,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 9
+      },
+      "id": 6,
+      "panels": [],
+      "title": "TRIGGERS",
+      "type": "row"
+    },
+    {
+      "ackEventColor": "rgb(56, 219, 156)",
+      "ageField": true,
+      "customLastChangeFormat": false,
+      "datasource": null,
+      "descriptionAtNewLine": false,
+      "descriptionField": true,
+      "fontSize": "100%",
+      "gridPos": {
+        "h": 11,
+        "w": 24,
+        "x": 0,
+        "y": 10
+      },
+      "highlightBackground": true,
+      "highlightNewEvents": false,
+      "highlightNewerThan": "1h",
+      "hostField": true,
+      "hostGroups": true,
+      "hostProxy": false,
+      "hostTechNameField": false,
+      "hostsInMaintenance": true,
+      "id": 10,
+      "lastChangeFormat": "",
+      "layout": "list",
+      "limit": 100,
+      "markAckEvents": false,
+      "okEventColor": "rgb(56, 189, 113)",
+      "options": {},
+      "pageSize": 25,
+      "problemTimeline": true,
+      "resizedColumns": [],
+      "schemaVersion": 7,
+      "severityField": true,
+      "showEvents": {
+        "text": "Problems",
+        "value": 1
+      },
+      "showTags": true,
+      "showTriggers": "all triggers",
+      "sortTriggersBy": {
+        "text": "severity",
+        "value": "priority"
+      },
+      "statusField": true,
+      "statusIcon": true,
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "datasource": "Zabbix GUB",
+          "group": {
+            "filter": ""
+          },
+          "host": {
+            "filter": ""
+          },
+          "proxy": {
+            "filter": ""
+          },
+          "refId": "A",
+          "tags": {
+            "filter": ""
+          },
+          "trigger": {
+            "filter": ""
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "ALERTAS",
+      "triggerSeverity": [
+        {
+          "color": "rgb(108, 108, 108)",
+          "priority": 0,
+          "severity": "Not classified",
+          "show": true
+        },
+        {
+          "color": "rgb(120, 158, 183)",
+          "priority": 1,
+          "severity": "Information",
+          "show": true
+        },
+        {
+          "color": "rgb(175, 180, 36)",
+          "priority": 2,
+          "severity": "Warning",
+          "show": true
+        },
+        {
+          "color": "rgb(255, 137, 30)",
+          "priority": 3,
+          "severity": "Average",
+          "show": true
+        },
+        {
+          "color": "rgb(255, 101, 72)",
+          "priority": 4,
+          "severity": "High",
+          "show": true
+        },
+        {
+          "color": "rgb(215, 0, 0)",
+          "priority": 5,
+          "severity": "Disaster",
+          "show": true
+        }
+      ],
+      "type": "alexanderzobnin-zabbix-triggers-panel"
+    },
+    {
+      "collapsed": false,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 21
+      },
+      "id": 4,
+      "panels": [],
+      "title": "PROCESSOS",
+      "type": "row"
+    },
+    {
+      "datasource": "Zabbix GUB",
+      "gridPos": {
+        "h": 5,
+        "w": 5,
+        "x": 0,
+        "y": 22
+      },
+      "id": 33,
+      "options": {
+        "colorMode": "background",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-blue",
+                  "value": null
+                }
+              ]
+            }
+          },
+          "overrides": [],
+          "values": false
+        },
+        "graphMode": "area",
+        "justifyMode": "center",
+        "orientation": "auto"
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": "Processes"
+          },
+          "functions": [],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Number of processes"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "QUANTIDADE TOTAL DE PROCESSOS",
+      "type": "stat"
+    },
+    {
+      "datasource": null,
+      "gridPos": {
+        "h": 6,
+        "w": 19,
+        "x": 5,
+        "y": 22
+      },
+      "id": 23,
+      "maxDataPoints": "100",
+      "options": {
+        "displayMode": "gradient",
+        "fieldOptions": {
+          "calcs": [
+            "last"
+          ],
+          "defaults": {
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "dark-blue",
+                  "value": null
+                },
+                {
+                  "color": "dark-orange",
+                  "value": 60
+                },
+                {
+                  "color": "dark-red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "percent"
+          },
+          "overrides": [],
+          "values": false
+        },
+        "orientation": "horizontal",
+        "showUnfilled": false
+      },
+      "pluginVersion": "6.6.0",
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "ICMP PING"
+              ],
+              "text": "setAlias(ICMP PING)"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix busy icmp pinger processes, in %"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "POLLERS"
+              ],
+              "text": "setAlias(POLLERS)"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix busy poller processes, in %"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "C",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "HISTÓRICO OCUPADO"
+              ],
+              "text": "setAlias(HISTÓRICO OCUPADO)"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix busy history syncer processes, in %"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "E",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "HOUSEKEEPER"
+              ],
+              "text": "setAlias(HOUSEKEEPER)"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix busy housekeeper processes, in %"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "B",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "category": "Alias",
+                "defaultParams": [],
+                "name": "setAlias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ]
+              },
+              "params": [
+                "ALERTAS"
+              ],
+              "text": "setAlias(ALERTAS)"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix busy alerter processes, in %"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "D",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "timeFrom": null,
+      "timeShift": null,
+      "title": "",
+      "transparent": true,
+      "type": "bargauge"
+    },
+    {
+      "collapsed": false,
+      "datasource": null,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 28
+      },
+      "id": 2,
+      "panels": [],
+      "title": "CPU/MEMORIA/INTERFACES",
+      "type": "row"
+    },
+    {
+      "aliasColors": {
+        " CPU TEMPO IDLE": "dark-blue",
+        "CPU idle time": "dark-blue"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fill": 5,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 9,
+        "x": 0,
+        "y": 29
+      },
+      "hiddenSeries": false,
+      "id": 25,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": false,
+        "min": false,
+        "rightSide": true,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 2,
+      "nullPointMode": "null",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "CPU"
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "replaceAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ]
+              },
+              "params": [
+                "/CPU softirq time(.*)/",
+                "TEMPO DE PROCESSAMENTO DA CPU$1"
+              ],
+              "text": "replaceAlias(/CPU softirq time(.*)/, TEMPO DE PROCESSAMENTO DA CPU$1)",
+              "added": false
+            },
+            {
+              "def": {
+                "name": "replaceAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ]
+              },
+              "params": [
+                "/CPU iowait time(.*)/",
+                "TEMPO DE IOWAIT DA CPU$1"
+              ],
+              "text": "replaceAlias(/CPU iowait time(.*)/, TEMPO DE IOWAIT DA CPU$1)",
+              "added": false
+            },
+            {
+              "def": {
+                "name": "replaceAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ]
+              },
+              "params": [
+                "/CPU user time(.*)/",
+                "TEMPO DE USUÁRIO DA CPU$1"
+              ],
+              "text": "replaceAlias(/CPU user time(.*)/, TEMPO DE USUÁRIO DA CPU$1)",
+              "added": false
+            },
+            {
+              "def": {
+                "name": "replaceAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ]
+              },
+              "params": [
+                "/CPU idle time(.*)/",
+                "$1 CPU TEMPO IDLE"
+              ],
+              "text": "replaceAlias(/CPU idle time(.*)/, $1 CPU TEMPO IDLE)",
+              "added": false
+            },
+            {
+              "def": {
+                "name": "replaceAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ]
+              },
+              "params": [
+                "/CPU system time(.*)/",
+                "TEMPO DE SISTEMA DA CPU$1"
+              ],
+              "text": "replaceAlias(/CPU system time(.*)/, TEMPO DE SISTEMA DA CPU$1)",
+              "added": false
+            },
+            {
+              "def": {
+                "name": "replaceAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ]
+              },
+              "params": [
+                "/CPU nice time(.*)/",
+                "TEMPO AGRADÁVEL DA CPU$1"
+              ],
+              "text": "replaceAlias(/CPU nice time(.*)/, TEMPO AGRADÁVEL DA CPU$1)",
+              "added": false
+            },
+            {
+              "def": {
+                "name": "replaceAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ]
+              },
+              "params": [
+                "/CPU steal time(.*)/",
+                "TEMPO DE PERCA DA CPU$1"
+              ],
+              "text": "replaceAlias(/CPU steal time(.*)/, TEMPO DE PERCA DA CPU$1)",
+              "added": false
+            },
+            {
+              "def": {
+                "name": "replaceAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "regexp",
+                    "type": "string"
+                  },
+                  {
+                    "name": "newAlias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": [
+                  "/(.*)/",
+                  "$1"
+                ]
+              },
+              "params": [
+                "/CPU interrupt time(.*)/",
+                "TEMPO DE INTERRUPÇÃO DA CPU$1"
+              ],
+              "text": "replaceAlias(/CPU interrupt time(.*)/, TEMPO DE INTERRUPÇÃO DA CPU$1)",
+              "added": false
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "/CPU.*time$/"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "CPU VISÃO GERAL",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "CPU idle time": "dark-blue",
+        "Carga do processador (média de 1 min por núcleo)": "dark-blue",
+        "Carga do processador (média de 15 min por núcleo)": "dark-yellow",
+        "Carga do processador (média de 5 min por núcleo)": "dark-orange"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fill": 6,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 9,
+        "x": 9,
+        "y": 29
+      },
+      "hiddenSeries": false,
+      "id": 26,
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": true,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 2,
+      "nullPointMode": "connected",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "CPU"
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "Carga do processador (média de 1 min por núcleo)"
+              ],
+              "text": "setAlias(Carga do processador (média de 1 min por núcleo))"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Processor load (1 min average per core)"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": "CPU"
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "Carga do processador (média de 5 min por núcleo)"
+              ],
+              "text": "setAlias(Carga do processador (média de 5 min por núcleo))"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Processor load (5 min average per core)"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "B",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": "CPU"
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "Carga do processador (média de 15 min por núcleo)"
+              ],
+              "text": "setAlias(Carga do processador (média de 15 min por núcleo))"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Processor load (15 min average per core)"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "C",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "CARGA DO PROCESSADOR",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "CPU idle time": "dark-blue",
+        "Carga do processador (média de 1 min por núcleo)": "semi-dark-green",
+        "Carga do processador (média de 15 min por núcleo)": "semi-dark-orange",
+        "Carga do processador (média de 5 min por núcleo)": "semi-dark-yellow",
+        "FILA": "semi-dark-orange",
+        "PROCESSOS EM FILA": "dark-blue"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fill": 5,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 6,
+        "x": 18,
+        "y": 29
+      },
+      "hiddenSeries": false,
+      "id": 27,
+      "legend": {
+        "alignAsTable": true,
+        "avg": true,
+        "current": true,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 2,
+      "nullPointMode": "connected",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "scale",
+                "category": "Transform",
+                "params": [
+                  {
+                    "name": "factor",
+                    "type": "float",
+                    "options": [
+                      100,
+                      0.01,
+                      10,
+                      -1
+                    ]
+                  }
+                ],
+                "defaultParams": [
+                  100
+                ]
+              },
+              "params": [
+                "100"
+              ],
+              "text": "scale(100)"
+            },
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "PROCESSOS EM FILA"
+              ],
+              "text": "setAlias(PROCESSOS EM FILA)"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix preprocessing queue"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "FILA"
+              ],
+              "text": "setAlias(FILA)"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Zabbix queue"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "B",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "FILA DO SERVIDOR",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "CPU idle time": "dark-blue",
+        "Carga do processador (média de 1 min por núcleo)": "semi-dark-green",
+        "Carga do processador (média de 15 min por núcleo)": "semi-dark-orange",
+        "Carga do processador (média de 5 min por núcleo)": "semi-dark-yellow",
+        "FILA": "semi-dark-green",
+        "Incoming network traffic on ens18": "dark-blue",
+        "Outgoing network traffic on ens18": "semi-dark-orange",
+        "PROCESSOS EM FILA": "dark-red",
+        "TRÁFEGO DE ENTRADA ": "dark-blue",
+        "TRÁFEGO DE SAÍDA": "semi-dark-orange"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fill": 6,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 11,
+        "x": 0,
+        "y": 38
+      },
+      "hiddenSeries": false,
+      "id": 28,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "connected",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "TRÁFEGO DE ENTRADA",
+          "transform": "negative-Y"
+        },
+        {
+          "alias": "TRÁFEGO DE SAÍDA",
+          "transform": "negative-Y"
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "TRÁFEGO DE ENTRADA "
+              ],
+              "text": "setAlias(TRÁFEGO DE ENTRADA )"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "/Incoming network traffic on .*/"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "TRÁFEGO DE SAÍDA"
+              ],
+              "text": "setAlias(TRÁFEGO DE SAÍDA)"
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "/Outgoing network traffic on .*/"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "B",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "TRÁFEGO",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "bps",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "Available memory": "dark-blue",
+        "CPU idle time": "dark-blue",
+        "Carga do processador (média de 1 min por núcleo)": "semi-dark-green",
+        "Carga do processador (média de 15 min por núcleo)": "semi-dark-orange",
+        "Carga do processador (média de 5 min por núcleo)": "semi-dark-yellow",
+        "FILA": "semi-dark-green",
+        "MEMÓRIA ": "dark-blue",
+        "PROCESSOS EM FILA": "dark-red"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "decimals": 2,
+      "fill": 4,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 6,
+        "x": 11,
+        "y": 38
+      },
+      "hiddenSeries": false,
+      "id": 29,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 4,
+      "nullPointMode": "connected",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": ""
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "MEMÓRIA "
+              ],
+              "text": "setAlias(MEMÓRIA )",
+              "added": false
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Available memory"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "MEMÓRIA DISPONÍVEL",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "format": "bytes",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    },
+    {
+      "aliasColors": {
+        "CPU idle time": "dark-blue",
+        "Carga do processador (média de 1 min por núcleo)": "semi-dark-green",
+        "Carga do processador (média de 15 min por núcleo)": "semi-dark-orange",
+        "Carga do processador (média de 5 min por núcleo)": "semi-dark-yellow",
+        "DISPONÍVEL ON /BOOT": "dark-orange",
+        "DISPONÍVEL ON/": "dark-blue",
+        "FILA": "semi-dark-green",
+        "Free disk space on /": "dark-blue",
+        "Free disk space on /boot": "semi-dark-orange",
+        "PROCESSOS EM FILA": "dark-red"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": null,
+      "fill": 4,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 7,
+        "x": 17,
+        "y": 38
+      },
+      "hiddenSeries": false,
+      "id": 30,
+      "legend": {
+        "alignAsTable": true,
+        "avg": false,
+        "current": true,
+        "max": true,
+        "min": true,
+        "rightSide": false,
+        "show": true,
+        "total": false,
+        "values": true
+      },
+      "lines": true,
+      "linewidth": 3,
+      "nullPointMode": "null as zero",
+      "options": {
+        "dataLinks": []
+      },
+      "percentage": false,
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [
+        {
+          "alias": "Free disk space on /boot",
+          "yaxis": 2
+        },
+        {
+          "alias": "Free disk space on /",
+          "yaxis": 2
+        }
+      ],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "application": {
+            "filter": "Filesystems"
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "DISPONÍVEL ON/"
+              ],
+              "text": "setAlias(DISPONÍVEL ON/)",
+              "added": false
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Free disk space on /"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "A",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        },
+        {
+          "application": {
+            "filter": "Filesystems"
+          },
+          "functions": [
+            {
+              "def": {
+                "name": "setAlias",
+                "category": "Alias",
+                "params": [
+                  {
+                    "name": "alias",
+                    "type": "string"
+                  }
+                ],
+                "defaultParams": []
+              },
+              "params": [
+                "DISPONÍVEL ON /BOOT"
+              ],
+              "text": "setAlias(DISPONÍVEL ON /BOOT)",
+              "added": false
+            }
+          ],
+          "group": {
+            "filter": "$grupo"
+          },
+          "host": {
+            "filter": "$host"
+          },
+          "item": {
+            "filter": "Free disk space on /boot"
+          },
+          "mode": 0,
+          "options": {
+            "showDisabledItems": false,
+            "skipEmptyValues": false
+          },
+          "refId": "B",
+          "resultFormat": "time_series",
+          "table": {
+            "skipEmptyValues": false
+          },
+          "triggers": {
+            "acknowledged": 2,
+            "count": true,
+            "minSeverity": 3
+          }
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "DISCO DISPONÍVEL ",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": []
+      },
+      "yaxes": [
+        {
+          "decimals": 0,
+          "format": "bytes",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        },
+        {
+          "decimals": 0,
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null
+      }
+    }
+  ],
+  "refresh": "30s",
+  "schemaVersion": 22,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "text": "Zabbix servers",
+          "value": "Zabbix servers"
+        },
+        "datasource": "Zabbix GUB",
+        "definition": "*",
+        "hide": 2,
+        "includeAll": false,
+        "label": "GRUPO",
+        "multi": false,
+        "name": "grupo",
+        "options": [],
+        "query": "*",
+        "refresh": 1,
+        "regex": "Zabbix servers",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "text": "ZABBIX GUB",
+          "value": "ZABBIX GUB"
+        },
+        "datasource": "Zabbix GUB",
+        "definition": "$grupo.*",
+        "hide": 0,
+        "includeAll": false,
+        "label": "SERVIDOR",
+        "multi": false,
+        "name": "host",
+        "options": [],
+        "query": "$grupo.*",
+        "refresh": 1,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "",
+  "title": "MONITORAMENTO ZABBIX SERVER - EM DESENVOLVIMENTO",
+  "uid": "AI6M-L8Zk",
+  "version": 22
+}
