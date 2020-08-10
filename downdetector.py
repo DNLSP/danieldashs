@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-#########################################
-#                                       #
-# Author: Gabriel Padilha               #
-# Email: gabrielvargaspadilha@gmail.com #
-#                                       #
-#########################################
+
 import sys
 import ssl
 import re
